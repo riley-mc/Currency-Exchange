@@ -4,10 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import { CurrencyExchange } from './js/currencyexchange.js';
 
+function exchangeAmount(before, conversion) {
+  return before * conversion;
+}
+
+
 function getCurrencyExchange(response, conversionCurrency, usdCurrency)  {
   if (response.result === "Success")  {
     let conversionNumber = response.conversion_rates[conversionCurrency];
-    $("#result").html(`Your currency in JPY is: ${response.conversion_rates.JPY}`);
+    $("#result").html(exchangeAmount(usdCurrency, conversionNumber));
   } else {
     $("#result1").html(`there was an error: ${response['error-type']}`);
   }
