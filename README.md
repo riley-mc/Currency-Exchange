@@ -1,48 +1,59 @@
-# _{Application Name}_
+# Space Age
 
-#### _{Brief description of application}, {Date of current version}_
-
-#### By _**Amanda Otero**_
+#### _JavaScript, JQuery, For Loop and Array Week 4 Epicodus 11/13/2020_
 
 ## Description
+A calculator that will determine your age per lunar year for each planet of the solar system.
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+## Specifications
 
-## Specs/test
-
-| Description cost()                                                       	| Input                           	| Output 	|
-|--------------------------------------------------------------------------	|---------------------------------	|--------	|
-| test:"It should determine "      	| cost("TODO")      	| TODO    	|
+| Behavior | Input | Output |
+|------------------------|-----------------|---------------------|
+| The user will input their numerical age and will recieve back input age | 20 |  20 |
+| The application will divide user input by .24 to determine users age on Mercury and return | 20 | 83.3 |
+| The application will divide user input by .62 to determine users age on Venus and return | 20 | 32.2
+| The application will divide user input by 1.88 to determine users age on Mars and return | 20 | 10.6
+| The application will divide user input by 11.86 to determine users age on Jupiter and return | 20 | 1.68 |
+| Application will determine remaining life expectancy based on user input age per planet. Average human life will last 80 years. | 20 | 60 years remaining |
+| Application will recognize is user is age of life expectancy. | 80 | 0 years left. |
+| Application will determine how many years past life expectancy user inputs. | 85 | You are past the life expectancy! |
 
 ## Setup/Installation Requirements
 
-#### View Online
-* _To view my project visit:_
+### View Online
 
-#### Open Locally
-1. _Go to my GitHub mandystar018_
-2. _Copy this to clone repository right here:_
-3. _Open your terminal and use the command git clone and copy the hyperlink above,_
-3. _Alternately, click download zip and open the file in your computer._
-4. _Open the index.html file to view my project in a browser._
-5. _To edit my project you can open it in your favorite text editor._
+_To view my live website, visit [https://github.com/riley-mc/codereview4](https://github.com/riley-mc/codereview4)_
+
+### Open Locally
+
+_Go to my GitHub repository here, {{[https://github.com/riley-mc/codereview5](https://github.com/riley-mc/codereview5),}} and click on the green 'Code' button to clone the repository, Open with GitHub Desktop OR Download the ZIP file_
+
+##### To Clone:
+1. _Push the green 'Clone' button and copy the URL._
+2. _Open Terminal or GitBash and input the command:_ `git clone {{https://github.com/riley-mc/codereview5`}}
+3. _To view the code, open the copied directory with VSS by inputing the command `code .` in your terminal._
+4. _To view the website, open index.html in Chrome or your preferred browser._
 
 
-## Support and contact details
+## Known Bugs
 
-_If there is any concerns or questions please email me: mandystar018@gmail.com_
+
+
+
+## Support or Contact information
+
+_Feel free to reach out to Riley McAdoo [riley.mcadoo@gmail.com] or DM me on Discord @riley#2607_
 
 ## Technologies Used
 
-* _HTML_
-* _CSS_
-* _Bootstrap_
-* _Java Scripts_
-* _jQuery_
-* _Webpack_
-* _VS code_
+*_VSCode_
+*_HTML_
+*_CSS_
+*_JavaScript_
+*_jQuery_
+*_Bootstrap_
+*_Markdown_
+*_Git_
 
-### License
-
-Copyright (c) 2020 **_Amanda Otero_**
+Copyright (c) 2020 **_Riley McAdoo_**
 This software is licensed under the MIT license.
