@@ -15,11 +15,11 @@ function getCurrencyExchange(response, conversionCurrency, usdCurrency)  {
 
 
 async function apiCall(conversionCurrency, usdCurrency) {
-  const response = await Currency.getCurrencyExchange();
+  const response = await CurrencyExchange.getCurrencyExchange();
   getCurrencyExchange(response, conversionCurrency, usdCurrency);
 }
 
-$("#submit").submit(function(event)) {
+$("#submit").submit(function(event) {
   event.preventDefault();
   const usdCurrency = $("#usd").val();
   const currency = $("#convertTo").val();
