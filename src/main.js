@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import CurrencyExchange from './currencyexchange';
+import { CurrencyExchange } from './js/currencyexchange.js';
 
 function getCurrencyExchange(response)  {
   if (response.result === "Success")  {
@@ -21,21 +21,3 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-$(document).ready(function() {
-  $('#TODO').submit(function(event) {
-    event.preventDefault();
-  });
-});
