@@ -8,13 +8,16 @@ function exchangeAmount(before, conversion) {
   return before * conversion;
 }
 
-
 function getCurrencyExchange(response, conversionCurrency, usdCurrency)  {
   if (response.result === "Success")  {
     let conversionNumber = response.conversion_rates[conversionCurrency];
-    $("#result").html(exchangeAmount(usdCurrency, conversionNumber));
+    if (typeof conversionNumber === 'number') {
+      $("#result").html(exchangeAmount(usdCurrency, conversionNumber));
+    } else {
+      $("#result").html("Invalid currency.");
+    }
   } else {
-    $("#result1").html(`there was an error: ${response['error-type']}`);
+    $("#result2").html(`There was an error: ${response['error-type']}`);
   }
 }
 
