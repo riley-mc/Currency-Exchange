@@ -6,3 +6,9 @@ body {
 .jumbotron {
   background-color: rgb(118, 219, 163);
 }
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 115px;
+}
